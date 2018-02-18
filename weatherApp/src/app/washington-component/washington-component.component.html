@@ -1,0 +1,16 @@
+<div id="continer" >
+    <h1>Washington D.C.</h1>
+  
+    <div id="results" *ngIf = "weatherData.name != ''">
+      <div id="data">
+        <p>Humidity: {{ weatherData.main.humidity }}<br>
+        Temperature (Average): {{ weatherData.main.temp }}<br>
+        Temperature (High): {{ weatherData.main.temp_max }}<br>
+        Temperature (Low): {{ weatherData.main.temp_min }}<br>
+        Status: {{ weatherData.weather[0].description }}
+      </p>
+      </div>
+      <img id="image" src="https://fthmb.tqn.com/SJ7ydb7TT-3A0OVYr7Z3V9uHO4o=/960x0/filters:no_upscale()/capitol-building-170402241-58ddb7bf5f9b58468374c174.jpg" alt="washingtondc">
+    </div>
+  </div>
+  

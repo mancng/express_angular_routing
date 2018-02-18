@@ -1,0 +1,16 @@
+<div id="continer" >
+    <h1>Seattle, WA</h1>
+  
+    <div id="results" *ngIf = "weatherData.name != ''">
+      <div id="data">
+        <p>Humidity: {{ weatherData.main.humidity }}<br>
+        Temperature (Average): {{ weatherData.main.temp }}<br>
+        Temperature (High): {{ weatherData.main.temp_max }}<br>
+        Temperature (Low): {{ weatherData.main.temp_min }}<br>
+        Status: {{ weatherData.weather[0].description }}
+      </p>
+      </div>
+      <img id="image" src="https://media.apts247.info/5b/5bb81c29ec194f37bc66234964c56082/amenity_lists/community-amenities.jpg" alt="seattle">
+    </div>
+  </div>
+  
